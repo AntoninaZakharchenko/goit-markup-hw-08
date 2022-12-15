@@ -1,0 +1,22 @@
+@import'./utils/variables';
+@import './utils/placeholders';
+@import './utils/mixins';
+
+@import'./base/_base.scss';
+
+@import'./utils/visually-hiden';
+
+@import'./components/buttons';
+@import'./components/titles';
+@import'./components/modal';
+
+@import'./layouts/logo';
+@import'./layouts/heder';
+@import'./layouts/banner';
+@import'./layouts/features';
+@import'./layouts/projects';
+@import'./layouts/team';
+@import'./layouts/clients';
+@import'./layouts/footer';
+@import'./layouts/portfolio';
+
