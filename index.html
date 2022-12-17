@@ -86,26 +86,39 @@
         </li>
         </ul>
     </div>
-</section>
+</section> 
 <!--чим ми займаємось  --> 
 <section class="projects">
     <div class="container">
         <h2 class="section-title">Чим ми займаємося</h2>
         <ul class="projects__list list">
             <li class="projects__item list">
-                <img src="./images/box1.jpg" alt="робота за компютером" width="370">
+                <img srcset="./images/projects/img1-des1x.jpg 370w, 
+                ./images/projects/img1-des2x.jpg 740w " 
+                sizes="(min-width: 1200px) 370px"
+                src="./images/projects/img1-des1x.jpg" 
+                alt="робота за компютером" 
+                width="370">
                 <div class="projects__overlay">
                     <p>десктопні додатки</p>
                 </div>
             </li>
             <li class="projects__item list">
-                <img src="./images/box2.jpg" alt="робота з телефоном" width="370" >
+                <img srcset="./images/projects/img2-des1x.jpg 370w, 
+                ./images/projects/img2-des2x.jpg 740w " 
+                src="./images/projects/img2-des1x.jpg" 
+                alt="робота з телефоном" 
+                width="370" >
                 <div class="projects__overlay">
                     <p>мобільні додатки</p>
                 </div>
             </li>
             <li class="projects__item list">
-                <img src="./images/box3.jpg" alt="робота з планшетом" width="370" >
+                <img srcset="./images/projects/img3-des1x.jpg 370w, 
+                ./images/projects/img3-des2x.jpg 740w "
+                src="./images/projects/img3-des1x.jpg" 
+                alt="робота з планшетом" 
+                width="370" >
                 <div class="projects__overlay">
                     <p>дизайнерські рішення</p>
                 </div>
@@ -120,7 +133,19 @@
         <h2 class="section-title">Наша команда</h2>
         <ul class="team__members list">
             <li class="team__list"> 
-                <img class="team__photo" src="./images/demyanenko.jpg" alt="фотографія Ігоря Дем'яненко" width="270" height="260">
+                <img class="team__photo" 
+                srcset="
+                ./images/team/mob-demyanenko1x.jpg 450w,
+                ./images/team/tab-demyanenko1x.jpg 354w,
+                ./images/team/des-demyanenko1x.jpg 270w, 
+                ./images/team/mob-demyanenko2x 900w,
+                ./images/team/tab-demyanenko2x 708w,
+                ./images/team/des-demyanenko2x 540w"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354w, (min-width: 480px) 450px"
+                src="./images/team/mob-demyanenko1x.jpg" 
+                alt="фотографія Ігоря Дем'яненко" 
+                width="450" 
+                height="460">
                 <div class="team__about">
                     <h3 class="team__name">Ігор Дем'яненко</h3>
                     <p class="team__position" lang="en">Product Designer</p>
@@ -149,7 +174,19 @@
                 </div>
             </li>
             <li class="team__list"> 
-                <img class="team__photo"src="./images/repin.jpg" alt="фотографія Ольги Рєпіна" width="270" height="260">
+                <img class="team__photo" 
+                srcset="
+                ./images/team/mob-repin1x.jpg 450w,
+                ./images/team/tab-repin1x.jpg 354w,
+                ./images/team/des-repin1x.jpg 270w, 
+                ./images/team/mob-repin2x 900w,
+                ./images/team/tab-repin2x 708w,
+                ./images/team/des-repin2x 540w"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354w, (min-width: 480px) 450px"
+                src="./images/team/mob-repin1x.jpg" 
+                alt="фотографія Ольги Рєпіна" 
+                width="450" 
+                height="460">
                 <div class="team__about">
                     <h3 class="team__name">Ольга Рєпіна</h3>
                     <p class="team__position" lang="en">Frontend Developer</p>
@@ -179,7 +216,19 @@
                 </div>
             </li>
             <li class="team__list"> 
-                <img class="team__photo" src="./images/tarasov.jpg" alt="фотографія Миколи Тарасова" width="270" height="260">
+                <img class="team__photo" 
+                srcset="
+                ./images/team/mob-tarasov1x.jpg 450w,
+                ./images/team/tab-tarasov1x.jpg 354w,
+                ./images/team/des-tarasov1x.jpg 270w, 
+                ./images/team/mob-tarasov2x.jpg 900w,
+                ./images/team/tab-tarasov2x.jpg 708w,
+                ./images/team/des-tarasov2x.jpg 540w"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354w, (min-width: 480px) 450px"
+                src="./images/team/mob-tarasov1x.jpg" 
+                alt="фотографія Миколи Тарасова" 
+                width="450" 
+                height="460">
                 <div class="team__about">
                     <h3 class="team__name">Микола Тарасов</h3>
                     <p class="team__position" lang="en">Marketing</p>
@@ -209,7 +258,19 @@
                 </div>
             </li>
             <li class="team__list"> 
-                    <img class="team__photo" src="./images/ermakov.jpg" alt="фотографія Михайла Єрмакова" width="270" height="260">
+                <img class="team__photo" 
+                srcset="
+                ./images/team/mob-ermakov1x.jpg 450w,
+                ./images/team/tab-ermakov1x.jpg 354w,
+                ./images/team/des-ermakov1x.jpg 270w, 
+                ./images/team/mob-ermakov2x.jpg 900w,
+                ./images/team/tab-ermakov2x.jpg 708w,
+                ./images/team/des-ermakov2x.jpg 540w"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354w, (min-width: 480px) 450px"
+                src="./images/team/mob-ermakov1x.jpg"  
+                alt="фотографія Михайла Єрмакова" 
+                width="450" 
+                height="460">
                     <div class="team__about">
                         <h3 class="team__name">Михайло Єрмаков</h3>
                         <p class="team__position" lang="en">UI Designer</p>
@@ -345,7 +406,7 @@
         </form>
     </div>  
 </div>    
-</footer>
+</footer> 
 
 <div class="modal-backdrop is-hidden" data-modal>
     <div class="modal">

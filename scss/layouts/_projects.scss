@@ -1,13 +1,23 @@
 .projects {
-    padding-bottom: 94px;}
+    display: none;
+    padding-bottom: 0px;
+    @media screen and (min-width: 768px) {
+        display: none;
+        padding-bottom: 0px;}
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        padding-bottom: 94px;}}
 .projects__list{
     display: flex;}
-.projects__item:first-child {
-    margin-right: 30px;}
-.projects__item:last-child {
-    margin-left: 30px;}
+
 .projects__item {
-    position: relative;}
+    position: relative;
+    &:first-child {
+        margin-right: 30px;}
+    &:last-child {
+        margin-left: 30px;}
+}
+
 .projects__overlay {
     position: absolute;
     bottom: 0;
