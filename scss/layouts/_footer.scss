@@ -8,13 +8,11 @@
     display: flex;
     flex-wrap: wrap;}
 }
-// .footer .container {
-//     display: flex;
-//     align-items: baseline;
-//     @media screen and (min-width: 480px) {
-//         display: block;
-//         }
-//     }
+.footer .container {
+    @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;}
+    }
     .footer__address {
     display: flex;
     flex-direction: column;
@@ -23,31 +21,40 @@
     text-align: center;
     margin-bottom: 60px;
     @media screen and (min-width: 768px) {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: baseline;}
+        display: inline-block;
+        align-items: baseline;
+        margin-left: 60px;}
     @media screen and (min-width: 1200px) {
         flex-wrap: nowrap;
         justify-content: space-between;
+        text-align: start;
+        margin-left: 0px;
+        margin-right: 70px;
+        margin-bottom: 0px;
     }
 }
 address {
         margin-top: 20px;}
+.footer__item {
+    &:not(:last-child) {
+        margin-bottom: 9px;}
+    @media screen and (min-width: 1200px) {
+        width: 231px;}}
 
-.footer__item:not(:last-child) {
-    margin-bottom: 9px;}
 .footer__contacts {
     font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;}
+    letter-spacing: 0.03em;
+   
+}
 
 .footer__addres{
     // margin-right: 70px;
     color: var(--footer-addres);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover, &:focus {
-        color:var(--accent-color)}}
+        color:var(--accent-color)}
+        }
 .footer__mail {
     color: var(--footer-contacts-link);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -63,10 +70,19 @@ address {
 .footer__social {
     display: flex;
     flex-direction: column; 
-    @media screen and (min-width: 480px) {
-        text-align: center;
-        margin-bottom: 60px;
-    }}
+    text-align: center;
+    margin-bottom: 60px;
+    @media screen and (min-width: 768px) {
+        display: inline-block;
+        margin-left: 165px;
+        margin-bottom: 0px;
+        position: absolute;}
+        @media screen and (min-width: 1200px) {
+            position: unset;
+            display: flex;
+            margin-right: 93px;
+            margin-left: 0px;
+        }}
 .social-title {
     font-family: inherit;
     font-weight: 700;
@@ -96,7 +112,9 @@ address {
 .footer__mailing {
     display: flex;
     flex-direction: column;
-    // margin-left: 93px;
+    @media screen and (min-width: 1200px) {
+        align-items: flex-start;
+        margin-right: auto;}
 }
 .mailing-title {
     font-family: 'Roboto';
