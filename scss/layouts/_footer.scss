@@ -144,7 +144,6 @@ display: block;
     flex-wrap: wrap;
     margin-right: auto;
     margin-left: auto;
-    // margin-right: 12px;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 16px;
@@ -152,7 +151,14 @@ display: block;
     outline: none;
     color: var(--footer-addres);
     &:focus {
-    border: 1px solid var(--accent-color);}}
+    border: 1px solid var(--accent-color);}
+    
+    @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    }}
+
 .mailing-icon {
     width: 24px;
     height: 24px;
