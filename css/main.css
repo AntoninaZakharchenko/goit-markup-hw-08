@@ -1821,9 +1821,8 @@ address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
@@ -1852,13 +1851,49 @@ address {
 .portfolio__item:not(:first-child) {
   margin-left: 8px;
 }
+.portfolio__item:not(:first-child):nth-child(3) {
+  margin-right: 80px;
+}
+.portfolio__item:not(:first-child):nth-child(4) {
+  margin-left: 0px;
+  margin-top: 15px;
+}
+.portfolio__item:not(:first-child):nth-child(5) {
+  margin-top: 15px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio__item:not(:first-child):nth-child(3) {
+    margin-right: 0px;
+  }
+  .portfolio__item:not(:first-child):nth-child(4) {
+    margin-left: 8px;
+    margin-top: 0px;
+  }
+  .portfolio__item:not(:first-child):nth-child(5) {
+    margin-top: 0px;
+  }
+}
 
 .portfolio__project {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .portfolio__project {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__project {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .portfolio__link {
@@ -1876,31 +1911,81 @@ address {
 }
 
 .portfolio__design {
+  max-width: 450px;
   list-style: none;
 }
-.portfolio__design:nth-child(2) {
-  margin-right: 30px;
-  margin-left: 30px;
-}
-.portfolio__design:nth-child(5) {
-  margin-right: 30px;
-  margin-left: 30px;
-}
-.portfolio__design:nth-child(8) {
-  margin-right: 30px;
-  margin-left: 30px;
-}
-.portfolio__design:nth-child(6) {
-  margin-top: 30px;
+.portfolio__design:not(:last-child) {
   margin-bottom: 30px;
 }
-.portfolio__design:nth-child(4) {
-  margin-top: 30px;
-  margin-bottom: 30px;
+@media screen and (min-width: 768px) {
+  .portfolio__design {
+    max-width: 354px;
+  }
+  .portfolio__design:nth-child(1) {
+    margin-right: 30px;
+    margin-left: 0px;
+  }
+  .portfolio__design:nth-child(2) {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .portfolio__design:nth-child(3) {
+    margin-right: 30px;
+    margin-left: 0px;
+  }
+  .portfolio__design:nth-child(4) {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .portfolio__design:nth-child(5) {
+    margin-right: 30px;
+    margin-left: 0px;
+  }
+  .portfolio__design:nth-child(6) {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .portfolio__design:nth-child(7) {
+    margin-right: 30px;
+    margin-left: 0px;
+  }
+  .portfolio__design:nth-child(8) {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
 }
-.portfolio__design:nth-child(5) {
-  margin-top: 30px;
-  margin-bottom: 30px;
+@media screen and (min-width: 1200px) {
+  .portfolio__design {
+    max-width: 370px;
+  }
+  .portfolio__design:nth-child(2) {
+    margin-right: 30px;
+    margin-left: 0px;
+  }
+  .portfolio__design:nth-child(3) {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .portfolio__design:nth-child(5) {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+  .portfolio__design:nth-child(8) {
+    margin-right: 30px;
+    margin-left: 0px;
+  }
+  .portfolio__design:nth-child(6) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .portfolio__design:nth-child(4) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .portfolio__design:nth-child(5) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 .portfolio__title {
@@ -1927,6 +2012,17 @@ address {
   border-left: 1px solid #EEEEEE;
   border-right: 1px solid #EEEEEE;
   border-bottom: 1px solid #EEEEEE;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio__about-1 {
+    padding-bottom: 57px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__about-1 {
+    padding-bottom: 20px;
+  }
 }
 
 .portfolio__box {
