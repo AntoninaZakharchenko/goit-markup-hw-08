@@ -133,7 +133,7 @@ display: block;
     display: flex;
     width: 570px;}}
 .mailing-input {
-    width: 358px;
+    width: 290px;
     height: 50px;
     background-color: var(--footer-background-color);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -152,8 +152,12 @@ display: block;
     color: var(--footer-addres);
     &:focus {
     border: 1px solid var(--accent-color);}
-    
+    @media screen and (min-width: 480px) {
+    width: 450px;}
+    @media screen and (min-width: 768px) {
+    width: 450px;}
     @media screen and (min-width: 1200px) {
+    width: 358px;
     margin-right: 12px;
     margin-left: 0px;
     margin-bottom: 0px;

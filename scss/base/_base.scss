@@ -11,12 +11,12 @@ h1, h2, h3, h4, h5, h6, ul, li, p {
     margin-top: 0px;
     margin-bottom: 0px ;}
 .container {
-  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-
+    @media screen and (min-width: 480px){
+    max-width: 480px;}
     @media screen and (min-width: 768px) {
     max-width: 768px;}
     @media screen and (min-width: 1200px) {
