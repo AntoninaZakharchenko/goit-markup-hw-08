@@ -832,6 +832,7 @@ h1, h2, h3, h4, h5, h6, ul, li, p {
   top: 0;
   left: 0;
   width: 100vw;
+  height: 100vw;
   -webkit-transform: translateX(200%);
           transform: translateX(200%);
   overflow-y: auto;
