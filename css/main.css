@@ -864,7 +864,7 @@ h1, h2, h3, h4, h5, h6, ul, li, p {
 }
 
 .mobile__nav {
-  margin-bottom: 40px;
+  margin-bottom: 100px;
 }
 
 .mobile-nav__link {
@@ -907,9 +907,14 @@ h1, h2, h3, h4, h5, h6, ul, li, p {
 }
 
 .mobile-address__link--tel {
-  font-size: 34px;
+  font-size: 30px;
   line-height: 1.1764705882;
   color: var(--accent-color);
+}
+@media screen and (min-width: 480px) {
+  .mobile-address__link--tel {
+    font-size: 34px;
+  }
 }
 
 .mobile-address__link--mail {
